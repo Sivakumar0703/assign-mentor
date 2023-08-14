@@ -1,0 +1,72 @@
+
+
+1) GET ALL STUDENT DATA
+(Get request)
+https://assign-mentor-3vb1.onrender.com/student
+
+
+
+
+2) REGISTER STUDENT
+(Post request)
+https://assign-mentor-3vb1.onrender.com/student/register
+
+{
+    "name":"Mathew",
+    "email":"mathew@gmail.com"
+}
+
+
+
+3) ASSIGN MENTOR TO PARTICULAR STUDENT
+(Patch request)
+https://assign-mentor-3vb1.onrender.com/student/assign/mentor/64d3303449edccd54cf4007e
+
+{
+    "currentMentor":"Madhesh"
+}
+
+
+
+
+4) CHANGE MENTOR FOR PARTICULAR STUDENT
+(Patch request)
+https://assign-mentor-3vb1.onrender.com/student/change/mentor/64d34789f50318af27f7ecbc
+
+{
+    "currentMentor":"raj"
+}
+
+
+
+5) VIEW PREVIOUS MENTOR ASSIGNED FOR A PARTICULAR STUDNET
+(Get request)
+https://assign-mentor-3vb1.onrender.com/student/64d394078698e7b369ee38e3
+
+
+
+                 ***************   MENTOR   **************
+
+1) RESGISTER MENTOR
+(Post request)
+https://assign-mentor-3vb1.onrender.com/mentor/register
+
+{
+    "name":"Sai Krishnan",
+    "email":"sai@gmail.com"
+}
+
+
+2) GET ALL MENTOR DATA
+(Get request)
+https://assign-mentor-3vb1.onrender.com/mentor
+
+
+3) ASSIGN MANY STUDENT TO MENTOR
+(Patch request)
+https://assign-mentor-3vb1.onrender.com/mentor/assign/student/64d3550bdea177f30c7377cc
+
+{
+    "studentList":["Javith", "Guru" , "Chandru"]
+}
+

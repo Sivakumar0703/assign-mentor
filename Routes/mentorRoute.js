@@ -6,7 +6,7 @@ const studentModal = require("../Schema/studentSchema");
 mentorRoute.get("/", async (req, res) => {
     const mentors = await mentorModel.find();
     try {
-        res.status(200).json({ message: "Mentor data list" })
+        res.status(200).json({ message: "Mentor data list" , mentors})
     } catch (error) {
         res.status(400).json({ message: "Data fetching failed" })
     }
